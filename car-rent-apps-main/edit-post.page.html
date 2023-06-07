@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Edit Post</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="view-post"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-text color="danger">
+      <p>Update booking information</p>
+    </ion-text>
+
+    <ion-item>
+      <ion-label>Car</ion-label>
+      <ion-select value="General" okText="Okay" [(ngModel)]="post.car" cancelText="Dismiss">
+        <ion-select-option value="Proton Saga - RM100/Day">PROTON SAGA</ion-select-option>
+        <ion-select-option value="Perodua Bezza - RM100/Day">PERODUA BEZZA</ion-select-option>
+        <ion-select-option value="Proton Exora - RM120/Day">PROTON EXORA</ion-select-option>
+        <ion-select-option value="Perodua Alza - RM130/Day ">PERODUA ALZA</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="text" [(ngModel)]="post.name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">E-Mail</ion-label>
+      <ion-input type="email" [(ngModel)]="post.email" placeholder="your@gmail.com" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contact </ion-label>
+      <ion-input type="contact" [(ngModel)]="post.contact" required>
+        </ion-input>
+    </ion-item>
+
+    <ion-item class="form-group">
+      <ion-label class="ion-padding">Date</ion-label>
+      <ion-input [(ngModel)]="post.date" name="date" type="date" class="form-control"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="updatePost(post)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Update
+    </ion-button>
+
+  </div>
+</ion-content>
+

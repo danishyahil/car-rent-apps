@@ -1,0 +1,41 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>CarRent.my</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item [routerLink]="['/index']">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/book']">
+            <ion-icon name="car" slot="start"></ion-icon>
+            <ion-label>Book Cars</ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/view-post']">
+            <ion-icon name="archive" slot="start"></ion-icon>
+            <ion-label>View My Book</ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/about']">
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-label>About Us</ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/contact']">
+            <ion-icon name="chatbubbles" slot="start"></ion-icon>
+            <ion-label>FAQ</ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/home']">
+            <ion-icon name="exit" slot="start"></ion-icon>
+            <ion-label>Log Out</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

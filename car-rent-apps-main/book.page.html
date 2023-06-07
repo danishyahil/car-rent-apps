@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Book Cars</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <h3>CATEGORY - SEDAN</h3>
+    <p class="ion-text-center">
+      <img src="assets/saga.jpg" width=90%>
+    </p>
+    <ion-grid fixed>
+      <ion-row>
+        <b>PROTON SAGA</b>
+        <p>
+          RM 100/day . Standard Sedan . Good for 5 Adults 3 Bags .<br><br>
+          <ion-button [routerLink]="['/booking']" expand="block" color="primary">
+            Book Car
+          </ion-button>
+        </p>
+      </ion-row>
+    </ion-grid>
+
+    <p class="ion-text-center">
+      <img src="assets/bezza.jpg" width=90%>
+    </p>
+    <ion-grid fixed>
+      <ion-row>
+        <b>PERODUA BEZZA</b>
+        <p>
+          RM 100/day . Standard Sedan . Good for 5 Adults 3 Bags .<br><br>
+          <ion-button [routerLink]="['/booking']" expand="block" color="primary">
+            Book Car
+          </ion-button>
+        </p>
+      </ion-row>
+    </ion-grid>
+
+    <h3>CATEGORY - MPV</h3>
+    <p class="ion-text-center">
+      <img src="assets/exora.jpg" width=90%>
+    </p>
+    <ion-grid fixed>
+      <ion-row>
+        <b>PROTON EXORA</b>
+        <p>
+          RM 120/day . Standard Family MPV. Good for 7 Adults 4 Bags .<br><br>
+          <ion-button [routerLink]="['/booking']" expand="block" color="primary">
+            Book Car
+          </ion-button>
+        </p>
+      </ion-row>
+    </ion-grid>
+
+    <p class="ion-text-center">
+      <img src="assets/alza.jpg" width=90%>
+    </p>
+    <ion-grid fixed>
+      <ion-row>
+        <b>PERODUA ALZA</b>
+        <p>
+          RM 130/day . Modern Family MPV. Good for 7 Adults 4 Bags .<br><br>
+          <ion-button [routerLink]="['/booking']" expand="block" color="primary">
+            Book Car
+          </ion-button>
+        </p>
+      </ion-row>
+    </ion-grid>
+
+    
+  </div>
+  
+</ion-content>
+
+
